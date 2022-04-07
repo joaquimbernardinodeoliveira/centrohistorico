@@ -1,0 +1,43 @@
+@media only screen and (max-width: 720px){
+    #headerImage{
+        height: 7em!important;
+    }
+}
+
+.container-fluid{
+    margin-top: 3vw;
+    padding: 4% 2%;
+}
+
+
+#gallery{
+    justify-content: center;
+}
+
+#verticalImage figure a img{
+    width: 110%;
+    height: 22vw;
+}
+
+figure{
+    align-items: center;
+}
+
+figure a img{
+    width: 10vw;
+    border-radius: 1%;
+}
+
+.ampliedImage{
+    width: 100%;
+}
+
+#imagemAcervo{
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.modal-title{
+    display: none;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agendamentos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./css/agendamentos.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/effects.css">
+</head>
+<body>
+	<header>
+		<img id="logoImage" src="img/logo/logo-centro-historico.png">
+		<div class="title text-center">
+		  <h1>Centro Histórico</h1>
+		  <h5>Joaquim Bernardino de Oliveira</h5>
+		  <h6>Santana do Seridó-RN</h6>
+		</div>
+		
+	</header>
+
+	<!----------------------- barra de navegação-------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-estilo">
+		<a class="navbar-brand " href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="acervo.html">Acervo</a>
+			</li>
+			<!-- <li class="nav-item">
+			  <a class="nav-link" href="galeriadeimagens.html">Galeria</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="relatos.html">Relatos</a>
+			</li> -->
+			<li class="agendamento nav-item">
+			  <a class="nav-link" href="#">Agende sua visita</a>
+			</li>
+			<!-- <li class="nav-item">
+			  <a class="nav-link " data-toggle="modal" data-target="#modal-contato" href="#">Entre em contato</a>
+			</li> -->
+		  </ul>
+		</div>
+	  </nav>
+	
+	<main>
+		<div id="content">
+			<section id="sideColumnLeft" data-anime="right" class="col-1"></section>
+     
+			<div id="formulario" data-anime="down" class="row justify-content-center ">
+				<h1><i class="fas fa-paper-plane text-primary "></i>Preencha este formulário para agendar sua visita!</h1> 		
+				<div class="col-12">
+	
+					<form>
+						<div class="row">
+							<div class="form-group col-sm-6">
+	
+								<label for="inputNome">Instituição ou pessoa física</label>	
+								<input type="text" class="form-control" id="inputNome" placeholder="nome da instituição ou nome físico">
+	
+							</div>
+	
+							   <div class="form-group col-sm-6">
+	
+								<label for="e-mail">E-mail</label>	
+								<input type="text" class="form-control" id="e-mail" placeholder="E-mail">
+	
+							</div>
+						</div>
+		
+						  <div class="row">
+	
+							 <div class="form-group col-sm-4">
+	
+								<label for="inputCidade">Cidade</label>	
+								<input type="text" class="form-control" id="inputCidade" placeholder="Nome da cidade">
+	
+							</div>
+	
+							<div class="form-group col-sm-4">
+	
+								<label for="hora">Horário</label>	
+								<input type="time"  class="form-control" id="hora">
+	
+							</div>
+	
+							<div class="form-group col-sm-4">
+	
+								<label for="semana">Data</label>	
+								<input type="date"  class="form-control" name="semana" id="Data">
+						
+							</div>
+					   
+						  </div>	
+						  <input id="enviarButton" class="btn btn-primary" type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+	
+			<section id="sideColumnRight" data-anime="left" class="col-1"></section>
+		</div>
+		
+	</main>
+	<footer>
+        
+		<div class="row">
+		  
+		  <div id="image" class="col-md-3">
+		  <img id="logoImage" src="./img/logo/logo-centro-historico-completo.png" alt="">
+		  </div>
+	
+		  <div id="endereco" class="col-md-6 text-center">
+	
+			<h5 class="text-center">CENTRO HISTÓRICO SANTANA DO SERIDÓ/RN</h5>
+			<h6 class="text-center">AV. Zezé Aprígio, 228 Centro - Santana do Seridó/RN</h6>
+			<h6 class="text-center">CEP:59350-000 - Fone:(84)93476-0066</h6>
+			
+			
+		  </div>
+
+		  <div id="contact" class="col-md-3">
+			<h5>CONECTE-SE CONOSCO</h5>
+			<a href="https://www.facebook.com/educa.santana" target="_blank" class="btn btn-outline-info ">
+			  <i class="fab fa-facebook"></i> 
+			</a>
+			<a href="https://www.instagram.com/educa_cultura_ss/" target="_blank" class="btn btn-outline-info ">
+			  <i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNqszmNdmqQdvvrHXbLVLgRPdgggPJPQXmwBFjvxfSgvTZxQjcQWwPwhmFlMBnzPTHzQQq" class="btn btn-outline-info " target="blank">
+			  <i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		  </div>
+		</div> 
+		
+	
+	  </footer>
+		  
+		<!-- Modal -->
+		<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">FALE CONOSCO</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+
+							<div class="form-group">
+								<label for="formGroupExampleInput">Nome completo</label>
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="insira seu nome completo">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Email</label>
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@exemplo.com">
+							</div>
+
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Deixe seu comentário</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="insira aqui seu comentário" rows="3"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						<button type="button" class="btn btn-primary">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	<script src="./js/app.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

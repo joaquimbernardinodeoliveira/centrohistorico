@@ -1,0 +1,104 @@
+.principal-image{
+    margin-left: -1%;
+    width: 100vw;
+    height: 45vw;
+}
+
+#history{
+    cursor: default;
+    margin: 10vw 0 2vw 0;
+    background-image: linear-gradient(to right, #007294 50%, #34a7ca);
+    display: inline-flex;
+    align-items: center;
+}
+
+#content{
+    color: white;
+    left: 10vw;
+    margin: 3%;
+}
+
+#content h1{
+    margin:3vw 5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content p{
+    margin:0 4vw;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+#centro-historico{
+    margin: 4vw;
+    width: 38vw; 
+    box-shadow: 1px 6px 10px rgb(66, 66, 66);
+    border-radius: 5px;
+}
+
+#bottonButton{
+    position: relative;
+}
+
+#bottomButton h4{
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1vw;
+    box-shadow: 1px 6px 10px rgb(66, 66, 66);
+    background-color: #fac244;
+    width: 25vw;
+    margin: 0 0 5vw 35vw;
+    color: #ffffff;
+    font-size: 2.5vw;
+}
+
+#bottomButton h4:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 720px){
+    #history{
+        justify-items: center;
+        display: grid;
+    }
+
+    #centro-historico{
+        width: 80%; 
+    }
+
+    #content{
+        color: white;
+        margin: 3%;
+    }
+
+    #bottomButton h4{
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2.5vw;
+        box-shadow: 1px 6px 10px rgb(66, 66, 66);
+        background-color: #fac244;
+        width: 35vw;
+        margin: 0 0 5vw 28vw;
+        color: #ffffff;
+        font-size: 3vw;
+    }
+    
+    
+}
+
+.whatsapp-button{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+}
+.whatsapp-button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
